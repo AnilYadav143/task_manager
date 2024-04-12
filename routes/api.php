@@ -20,5 +20,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+/**Crud Api by resource */
 Route::resource('taskmanager',ApiController::class);
