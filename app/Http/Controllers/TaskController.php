@@ -102,7 +102,7 @@ class TaskController extends Controller
         }else{
             Alert::error('Error','Incurrect login credentials');
         }
-        return view('dashboard');
+        return redirect()->back();
    }
 
    public function dashboard(){
